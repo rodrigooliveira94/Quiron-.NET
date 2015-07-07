@@ -13,7 +13,7 @@ namespace Quiron.LojaVirtual.Dominio.Entidade
         
         public String Nome { get; set; }
         
-        public String Descricao { get; set; }
+        public String Descricao { get; set; } 
         
         public Decimal Preco { get; set; }
         
