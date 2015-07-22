@@ -10,12 +10,6 @@ namespace Quiron.LojaVirtual.UnitTest
     public class UnitTestQuiron
     {
         [TestMethod]
-        public void TestMethod1()
-        {
-        }
-
-        [TestMethod]
-
         public void TestarSeAPaginacaoEstaSendoGeradaCorretamente()
         {
             //Arrange
