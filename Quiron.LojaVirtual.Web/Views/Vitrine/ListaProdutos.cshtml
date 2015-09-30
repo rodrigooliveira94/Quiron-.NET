@@ -10,30 +10,11 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
 
 @foreach (var item in Model.Produtos) {
-    <tr>
-        <td>
-            @item.Nome
-        </td>
-        <td>
-            @item.Descricao
-        </td>
-        <td>
-            @item.Preco
-        </td>
-        <td>
-            @item.Categoria
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProdutoId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProdutoId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProdutoId })
-        </td>
-    </tr>
+    @Html.Partial("ProdutoDetalhes",item)
 }
 
-</table>
-
-@Html.PageLinks(Model.Paginacao, x => Url.Action("ListaProdutos", new {pagina = x}))
+<div class="btn-group pull-right">
+    @Html.PageLinks(Model.Paginacao, x => Url.Action("ListaProdutos", new {pagina = x}))
+</div>
