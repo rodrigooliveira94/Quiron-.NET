@@ -8,7 +8,7 @@ namespace Quiron.LojaVirtual.Dominio.Entidade
 {
     public class Produto
     {
-        
+        //Entidade Produto (Classe)
         public int ProdutoId { get; set; }
         
         public String Nome { get; set; }
@@ -18,6 +18,6 @@ namespace Quiron.LojaVirtual.Dominio.Entidade
         public Decimal Preco { get; set; }
         
         public String Categoria { get; set; }
-    
+     
     }
 }

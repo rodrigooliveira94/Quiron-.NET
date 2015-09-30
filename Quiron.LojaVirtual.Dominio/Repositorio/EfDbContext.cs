@@ -11,10 +11,12 @@ namespace Quiron.LojaVirtual.Dominio.Repositorio
 {
     public class EfDbContext : DbContext
     {
+        //DbContext (referenciar a classe produto em uma coleção DbSet)
 
         public DbSet<Produto> Produtos { get; set; }
 
-
+        // Reescrever o método para remover a pluralização
+         
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
