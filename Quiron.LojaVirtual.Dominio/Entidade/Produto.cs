@@ -11,13 +11,14 @@ namespace Quiron.LojaVirtual.Dominio.Entidade
         //Entidade Produto (Classe)
         public int ProdutoId { get; set; }
         
-        public String Nome { get; set; }
+        public string Nome { get; set; }
         
-        public String Descricao { get; set; } 
+        public string Descricao { get; set; }
+
+        public string Categoria { get; set; }
         
-        public Decimal Preco { get; set; }
+        public decimal Preco { get; set; }
         
-        public String Categoria { get; set; }
      
     }
 }

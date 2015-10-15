@@ -27,8 +27,15 @@
     </div>
 
     <div class="container body-content">
-        @RenderBody()
-        <hr />
+        <div class="row panel">
+            <div class="col-xs-3">
+                @Html.Action("Menu","Categoria")
+            </div>
+            <div class="col-xs-8">
+                @RenderBody()
+            </div>
+        </div>
+        <hr/>
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
