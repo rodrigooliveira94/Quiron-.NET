@@ -43,6 +43,8 @@ namespace Quiron.LojaVirtual.Web
                 new { controller = "Vitrine", action = "ListaProdutos" }, new {pagina = @"\d+"}
             );
 
+            routes.MapRoute(null, "{controller}/{action}");
+
 
         }
     }
